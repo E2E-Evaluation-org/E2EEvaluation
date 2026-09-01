@@ -58,7 +58,7 @@ To start the graphical user interface, the following commands can be used from t
 
 ![GUI](doc/GUI.png)
 
-If you are running MacOs and have problems using tkinter, make sure that tkinter is properly installed (```brew install python-tk```) and try to use the homebrew version to generate the virtual environment (usually at ```/opt/homebrew/bin/python3```) using ```/opt/homebrew/bin/python3 -m venv e2eEval``` at the beginning.
+If you are running MacOS and have problems using tkinter, make sure that tkinter is properly installed (```brew install python-tk@3.10``` when using python version 3.10) and try to use the homebrew version to generate the virtual environment (usually at ```/opt/homebrew/bin/python3,10```) using ```/opt/homebrew/bin/python3.10 -m venv e2eEval``` at the beginning.
 
 
 ### Command Line Interface
