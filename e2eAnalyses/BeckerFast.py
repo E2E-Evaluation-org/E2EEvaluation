@@ -7,6 +7,7 @@ https://doi.org/10.1016/j.sysarc.2017.09.004
 Becker et al. 2016:
 Synthesizing Job-Level Dependencies for Automotive Multi-rate Effect Chains
 https://doi.org/10.1109/RTCSA.2016.41
+(Analysis presented here is without job-level dependencies)
 
 Implementation is copied from https://github.com/tu-dortmund-ls12-rt/end-to-end_inter
 with only minor adjustments
