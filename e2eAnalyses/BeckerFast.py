@@ -1,11 +1,17 @@
 """
-End-to-End (e2e) Analysis by Becker et al.
+A faster implementation of the analyses by Becker et al.:
+
+Becker et al. 2017:
+Synthesizing Job-Level Dependencies for Automotive Multi-rate Effect Chains.
 https://doi.org/10.1016/j.sysarc.2017.09.004
+Becker et al. 2016:
+Synthesizing Job-Level Dependencies for Automotive Multi-rate Effect Chains
 https://doi.org/10.1109/RTCSA.2016.41
 
 Implementation is copied from https://github.com/tu-dortmund-ls12-rt/end-to-end_inter
-- only minor adjustments
+with only minor adjustments
 
+(see also the file: Becker2017.py)
 """
 
 

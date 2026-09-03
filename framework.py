@@ -67,6 +67,10 @@ analysesDict = {
     'becker17_RESPONSE_TIMES' : AnalysisMethod(becker17_RESPONSE_TIMES, 'Becker 2017 (RT MRDA)', 'B17(RT)', features=['periodic', 'implicit']),
     'becker17_SCHED_TRACE' : AnalysisMethod(becker17_SCHED_TRACE, 'Becker 2017 (ST MRDA)', 'B17(ST)', features=['periodic', 'implicit', 'schedule']),
     'becker17_LET' : AnalysisMethod(becker17_LET, 'Becker 2017 (LET MRDA)', 'B17(LET)', features=['periodic', 'LET']),
+    'beckerFast_NO_INFORMATION': AnalysisMethod(beckerFast_NO_INFORMATION, 'Becker 2017 Fast (Base MRDA)', 'B17F', features=['periodic', 'implicit']),
+    'beckerFast_RESPONSE_TIMES': AnalysisMethod(beckerFast_RESPONSE_TIMES, 'Becker 2017 Fast (RT MRDA)', 'B17F-RT', features=['periodic', 'implicit']),
+    'beckerFast_SCHED_TRACE': AnalysisMethod(beckerFast_SCHED_TRACE, 'Becker 2017 Fast (ST MRDA)', 'B17F-ST', features=['periodic', 'implicit', 'schedule']),
+    'beckerFast_LET': AnalysisMethod(beckerFast_LET, 'Becker 2017 Fast (LET MRDA)', 'B17F-LET', features=['periodic', 'LET']),
     'hamann17' : AnalysisMethod(hamann17, 'Hamann 2017 (baseline)', 'H17', features=['periodic', 'sporadic', 'LET']),
     'kloda18' : AnalysisMethod(kloda18, 'Kloda 2018', 'K18', features=['periodic', 'implicit']),
     'duerr19_mrt' : AnalysisMethod(duerr19_mrt, 'Dürr 2019 (MRT)', 'D19(MRT)', features=['periodic', 'sporadic', 'implicit', 'inter']),
@@ -91,10 +95,6 @@ analysesDict = {
     'guenzel23_equi_mrrt': AnalysisMethod(guenzel23_equi_mrrt, 'Günzel 2023 (equi MRRT)', 'G23(EQ-MRRT)', features=['periodic', 'LET']),
     'guenzel23_equi_impl_sched': AnalysisMethod(guenzel23_equi_impl_sched, 'Günzel 2023 (equi+sched MRT)', 'G23(EQ-SCHED)', features=['periodic', 'implicit', 'schedule']),
     'guenzel23_equi_impl_rt': AnalysisMethod(guenzel23_equi_impl_rt, 'Günzel 2023 (equi+rt MRT)', 'G23(EQ-RT)', features=['periodic', 'implicit']),
-    'beckerFast_NO_INFORMATION': AnalysisMethod(beckerFast_NO_INFORMATION, 'Becker Fast (Base MRDA)', 'BF', features=['periodic', 'implicit']),
-    'beckerFast_RESPONSE_TIMES': AnalysisMethod(beckerFast_RESPONSE_TIMES, 'Becker Fast (RT MRDA)', 'BF-RT', features=['periodic', 'implicit']),
-    'beckerFast_SCHED_TRACE': AnalysisMethod(beckerFast_SCHED_TRACE, 'Becker Fast (ST MRDA)', 'BF-ST', features=['periodic', 'implicit', 'schedule']),
-    'beckerFast_LET': AnalysisMethod(beckerFast_LET, 'Becker Fast (LET MRDA)', 'BF-LET', features=['periodic', 'LET']),
 }
 
 

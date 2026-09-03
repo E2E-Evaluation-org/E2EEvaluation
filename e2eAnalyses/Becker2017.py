@@ -1,11 +1,18 @@
 """
 Analysis from Becker et al. 2017:
 Synthesizing Job-Level Dependencies for Automotive Multi-rate Effect Chains.
+https://doi.org/10.1016/j.sysarc.2017.09.004
+Also used in Becker et al. 2016:
+Synthesizing Job-Level Dependencies for Automotive Multi-rate Effect Chains
+https://doi.org/10.1109/RTCSA.2016.41
+(Analysis presented here is without job-level dependencies)
 
 Implementation is based on a Java implementation provided by Matthias Becker
 
 - implicit
 - periodic
+
+(see also the file: BeckerFast.py)
 """
 
 
