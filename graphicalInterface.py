@@ -263,10 +263,10 @@ def runVisualMode(window):
             break
 
         if event == 'E2E-Framework':
-            webbrowser.open_new('https://github.com/tu-dortmund-ls12-rt/E2EEvaluation')
+            webbrowser.open_new('https://github.com/E2E-Evaluation-org/E2EEvaluation')
 
         if event == 'Masterthesis':
-            webbrowser.open_new('https://github.com/tu-dortmund-ls12-rt/E2EEvaluation/blob/main/doc/E2EEvaluation.pdf')
+            webbrowser.open_new('https://github.com/E2E-Evaluation-org/E2EEvaluation/blob/main/doc/E2EEvaluation.pdf')
 
         if event == 'End-to-End':
             webbrowser.open_new('https://github.com/tu-dortmund-ls12-rt/end-to-end')

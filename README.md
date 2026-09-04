@@ -19,7 +19,7 @@ Additionally, the following commands can be executed to install the necessary so
 
 Then clone this repository and enter it:
 
-- ```git clone https://github.com/tu-dortmund-ls12-rt/E2EEvaluation.git```
+- ```git clone https://github.com/E2E-Evaluation-org/E2EEvaluation.git```
 - ```cd E2EEvaluation```
 
 Create a virtual environment to safely install python packages without dependency issues and activate it:
@@ -37,7 +37,7 @@ Otherwise, the required python packages can also be installed manually using the
 - ```pip install FreeSimpleGUI```
 - ```pip install git+https://github.com/JasonGross/tikzplotlib.git```
 
-Please note that in the [master's thesis](https://github.com/tu-dortmund-ls12-rt/E2EEvaluation/blob/main/doc/E2EEvaluation.pdf), a file `pySimpleGUI/PySimpleGUI-4.60.5.tar.gz` is utilized for the installation of PySimpleGUI. 
+Please note that in the [master's thesis](https://github.com/E2E-Evaluation-org/E2EEvaluation/blob/main/doc/E2EEvaluation.pdf), a file `pySimpleGUI/PySimpleGUI-4.60.5.tar.gz` is utilized for the installation of PySimpleGUI. 
 This file has been removed for the open source publication to avoid potential copyright issues. 
 Furthermore, the framework is moved to use [FreeSimpleGUI](https://freesimplegui.readthedocs.io/en/latest/) instead. 
 
@@ -118,7 +118,7 @@ List of papers with analysis methods relevant for the framework:
 | [Martinez 2020](https://link.springer.com/article/10.1007/s11241-020-09350-3)                     |                                                                               | Yes      | No       | Yes      | Yes   | MDA/MRT      | Missing    |
 | [Günzel 2021](https://ieeexplore.ieee.org/document/9470490)                                       | [end-to-end](https://github.com/tu-dortmund-ls12-rt/end-to-end)               | Yes      | No      | Yes      | Yes   | MRDA,MDA/MRT | Integrated |
 | [Bi 2022](https://dl.acm.org/doi/abs/10.1145/3489517.3530609)                                     |                                                                               | Yes      | No       | Yes      | No    | MRDA         | Integrated |
-| [Gohari 2022](https://dl.acm.org/doi/abs/10.1145/3534879.3534893)                                 | [np-data-age-analysis](https://github.com/porya-gohary/np-data-age-analysis)  | Yes      | No       | Yes      | No    | MRDA         | Integrated (via system call) (see [Notes on Copyright](https://github.com/tu-dortmund-ls12-rt/E2EEvaluation/tree/main?tab=readme-ov-file#notes-on-copyright)) |
+| [Gohari 2022](https://dl.acm.org/doi/abs/10.1145/3534879.3534893)                                 | [np-data-age-analysis](https://github.com/porya-gohary/np-data-age-analysis)  | Yes      | No       | Yes      | No    | MRDA         | Integrated (via system call) (see [Notes on Copyright](https://github.com/E2E-Evaluation-org/E2EEvaluation/tree/main?tab=readme-ov-file#notes-on-copyright)) |
 | [Pazzaglia 2022](https://ieeexplore.ieee.org/document/9858081)                                    | [ChainMiss](https://github.com/PaoloPazzaglia/ChainMiss)                      | Yes      | No       | No       | Yes   | ?            | Received   |
 | [Teper 2022](https://ieeexplore.ieee.org/document/9984789)                                        | [ros2-end-to-end](https://github.com/HarunTeper/ros2-end-to-end)              | ?        | ?        | ?        | ?     | ?            | Received   |
 | [Kloda 2022](https://ieeexplore.ieee.org/document/9774655)                                        |                                                                               | Yes      | No       | Yes      | No    | MRT          | Missing    |
