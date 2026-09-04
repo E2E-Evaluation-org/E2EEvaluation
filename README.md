@@ -1,6 +1,6 @@
 # Evaluation Framework for End-to-End Latency of Cause-Effect Chains
 Evaluation framework for end-to-end analysis methods for cause-effect chains.
-The framework was initiated as part of the [master's thesis](https://github.com/tu-dortmund-ls12-rt/E2EEvaluation/blob/main/doc/E2EEvaluation.pdf) of Robin Edmaier. 
+The framework was initiated as part of the [master's thesis](https://github.com/E2E-Evaluation-org/E2EEvaluation/blob/main/doc/E2EEvaluation.pdf) of Robin Edmaier. 
 It integrates many different end-to-end analysis methods and allows to evaluate them on different benchmarks. The framework can be used to perform the following steps:
 
 1. Generating task sets
@@ -192,7 +192,7 @@ Caution is required when redistributing the applied framework, since the local c
 For the initial version of this framework [PySimpleGUI](https://www.pysimplegui.com/) was used. Since the authors of PySimpleGUI decided to introduce a proprietary license for newer versions of their gui framework, it is currently not possible to use it without a license. 
 Therefore, this repository now uses [FreeSimpleGUI](https://github.com/spyoungtech/FreeSimpleGUI) instead.
 
-For creating the tikz-output, the code from [JasonGross/tikzplotlib](https://github.com/JasonGross/tikzplotlib) is used. This code was forked from [nschloe/tikzplotlib](https://github.com/nschloe/tikzplotlib) and is currently much better maintained than the repository from the original author.
+For creating the tikz-output, the code from [JasonGross/tikzplotlib](https://github.com/JasonGross/tikzplotlib) is used. This code was forked from [nschloe/tikzplotlib](https://github.com/nschloe/tikzplotlib) and is currently better maintained than the repository from the original author.
 
 ## Acknowledgements
 
