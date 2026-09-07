@@ -163,11 +163,11 @@ default_output_params = {
 ######################
 
 def check_params(taskset_params, cec_params, warnings=True):
-    """Checks the given taskset and cause-effect chain parameters for
+    """Checks the given task set and cause-effect chain parameters for
     logical errors, in case an error was found an exception is thrown
     """
 
-    # taskset params check
+    # task set params check
     assert taskset_params['target_util'] >= 0.01
     assert taskset_params['target_util'] <= 0.99
     assert taskset_params['number_of_tasksets'] >= 0
@@ -298,9 +298,9 @@ def create_interconnected_cecs(cause_effect_chains, cec_params):
     return interconncected_chains
 
 
-###########################
-### Taskset adjustments ###
-###########################
+############################
+### Task set adjustments ###
+############################
 
 def remove_invalid_tasksets(tasksets):
     """Returns only those task sets, in which every task
@@ -351,7 +351,7 @@ def generate_cecs(general_params,
         cec_generation_params
     )
 
-    ### Create Taskset ###
+    ### Create Task Set ###
 
     # selected automotive benchmark
     if taskset_generation_params['use_automotive_taskset_generation']:
@@ -374,7 +374,7 @@ def generate_cecs(general_params,
         taskset.rate_monotonic_scheduling()
         taskset.compute_wcrts()
 
-    # remove tasksets with tasks that miss their deadline
+    # remove task sets with tasks that miss their deadline
     tasksets = remove_invalid_tasksets(tasksets)
 
 

@@ -56,7 +56,7 @@ To start the graphical user interface, the following commands can be used from t
 - ```. e2eEval/bin/activate```
 - ```python3.X e2eMain.py```
 
-![GUI](doc/GUI.png)
+![GUI](doc/GUInew.png)
 
 If you are running MacOS and have problems using tkinter, make sure that tkinter is properly installed (```brew install python-tk@3.10``` when using python version 3.10) and try to use the homebrew version to generate the virtual environment (usually at ```/opt/homebrew/bin/python3,10```) using ```/opt/homebrew/bin/python3.10 -m venv e2eEval``` at the beginning.
 
@@ -133,7 +133,7 @@ List of papers with analysis methods relevant for the framework:
 
     .
     ├── benchmarks                      # Folder with all available benchmarks
-    │   ├── benchmark_Uniform.py        # Uniform taskset/cec generation
+    │   ├── benchmark_Uniform.py        # Uniform task set/cec generation
     │   └── benchmark_WATERS.py         # Automotive (WATERS) benchmark
     ├── cechains            
     │   ├── chain.py                    # Definiton of a cause-effect chain
@@ -162,7 +162,7 @@ List of papers with analysis methods relevant for the framework:
     ├── tasks
     │   ├── job.py                      # Definition of a job
     │   ├── task.py                     # Definition of a task
-    │   └── taskset.py                  # Definition of a taskset
+    │   └── taskset.py                  # Definition of a task set
     ├── utilities                       # Extra code, only necessary for some analyses
     │   ├── analyzer_guenzel23.py       # Utility file for Guenzel2023_inter
     │   ├── augmented_job_chain.py      # Utility file for Guenzel2023_inter

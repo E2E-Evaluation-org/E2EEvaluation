@@ -39,7 +39,7 @@ def print_help():
     print('General Parameters:')
     for param in general_params: print(param)
     print('')
-    print('Taskset Parameters:')
+    print('Task Set Parameters:')
     for param in taskset_params: print(param)
     print('')
     print('Cause-Effect Chain Parameters:')

@@ -21,7 +21,10 @@ def inititalizeUI():
     """launches the main window of the GUI
     """
 
-    sg.theme('system default')
+    # sg.theme('system default')
+    # sg.theme('BlueMono')
+    sg.theme('TanBlue')
+
 
     # Definition of the user interface layout
 
@@ -49,15 +52,15 @@ def inititalizeUI():
         [sg.Text('Threads:'), sg.Input(s=5, k='-Threads_Input-', default_text='1')],
     ], expand_x=True)]
 
-    layoutTaskset = [sg.Frame('Taskset Configuration', [
+    layoutTaskset = [sg.Frame('Task Set Configuration', [
         [sg.Radio('Automotive Benchmark', "RadioTaskset", default=True, k='-Automotive_Taskset_Radio-', enable_events=True)],
-        [sg.Radio('Uniform Taskset Generation', "RadioTaskset", default=False, k='-Uniform_Taskset_Radio-', enable_events=True)],
+        [sg.Radio('Uniform Task Set Generation', "RadioTaskset", default=False, k='-Uniform_Taskset_Radio-', enable_events=True)],
             [sg.Checkbox('Semi-Harmonic Periods', default=True, k='-Semi_harmonic_Box-', pad=((30,0),(0,0)), disabled=True, enable_events=True)],
             [sg.Text('Min Number Tasks:', pad=((35,0),(0,0))), sg.Input(s=5, k='-MINT_Input-', disabled=True, default_text='40'), sg.Text('Max Number Tasks:'), sg.Input(s=5, k='-MAXT_Input-', disabled=True, default_text='60')],
             [sg.Text('Min Period:', pad=((35,0),(0,0))), sg.Input(s=10, k='-PMIN_Input-', disabled=True, default_text='1'), sg.Text('Max Period:'), sg.Input(s=10, k='-PMAX_Input-', disabled=True, default_text='2000')],
         [sg.Text('Target Utilization:'), sg.Spin(values=[i for i in range(0, 101)], initial_value=50, key='-Utilization_Spin-', s=(3,1))],
-        [sg.Text('Number of Tasksets:'), sg.Input(s=10, k='-Number_Tasksets_Input-', default_text='1')],
-        [sg.Text('Percentage of sporadic Tasks in Taskset:'), sg.Spin(values=[i for i in range(0, 101)], initial_value=0, key='-Sporadic_Ratio_Spin-', s=(3,1))],
+        [sg.Text('Number of Task Sets:'), sg.Input(s=10, k='-Number_Tasksets_Input-', default_text='1')],
+        [sg.Text('Percentage of sporadic Tasks in Task Set:'), sg.Spin(values=[i for i in range(0, 101)], initial_value=0, key='-Sporadic_Ratio_Spin-', s=(3,1))],
         [sg.Text('Percentage of Tasks using LET Communication:'), sg.Spin(values=[i for i in range(0, 101)], initial_value=0, key='-LET_Ratio_Spin-', s=(3,1))],
         [sg.Text('BCET Percentage (BCET relative to WCET):'), sg.Spin(values=[i for i in range(0, 101)], initial_value=100, key='-BCET_Ratio_Spin-', s=(3,1))]
     ], expand_x=True)]
@@ -65,7 +68,7 @@ def inititalizeUI():
     layoutChain = [sg.Frame('Cause-Effect Chain Configuration', [
         [sg.Radio('Automotive Benchmark', "RadioChain", default=True, k='-Automotive_CEC_Radio-', enable_events=True)],
         [sg.Radio('Random CECs', "RadioChain", default=False, k='-Random_CEC_Radio-', enable_events=True), sg.Text('Min Tasks:'), sg.Input(s=5, k='-Number_Tasks_Min_Input-', default_text='2', disabled=True), sg.Text('Max Tasks:'), sg.Input(s=5, k='-Number_Tasks_Max_Input-', default_text='10', disabled=True)],
-        [sg.Text('Min Chains per Taskset:'), sg.Input(s=5, k='-Number_Chains_Min_Input-', default_text='30'), sg.Text('Max Chains per Taskset:'), sg.Input(s=5, k='-Number_Chains_Max_Input-', default_text='60')],
+        [sg.Text('Min Chains per Task Set:'), sg.Input(s=5, k='-Number_Chains_Min_Input-', default_text='30'), sg.Text('Max Chains per Task Set:'), sg.Input(s=5, k='-Number_Chains_Max_Input-', default_text='60')],
         [sg.Checkbox('Interconnected CECs', default=False, k='-Inter_CECs_Box-', enable_events=True), sg.Text('Min ECUs:'), sg.Input(s=3, k='-Min_ECUs_Input-', default_text='2', disabled=True), sg.Text('Max ECUs:'), sg.Input(s=3, k='-Max_ECUs_Input-', default_text='5', disabled=True), sg.Text('Number of inter Chains:'), sg.Input(s=7, k='-Number_Interconnected_Chains_Input-', default_text='1000', disabled=True)]
     ], expand_x=True)]
 
@@ -324,7 +327,7 @@ def runVisualMode(window):
                 continue
             general_params['cecs_file_path'] = values['-File_Input-']
 
-            # Taskset
+            # Task Set
             taskset_params['use_automotive_taskset_generation'] = values['-Automotive_Taskset_Radio-']
             taskset_params['use_uniform_taskset_generation'] = values['-Uniform_Taskset_Radio-']
             try:
