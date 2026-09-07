@@ -56,7 +56,7 @@ To start the graphical user interface, the following commands can be used from t
 - ```. e2eEval/bin/activate```
 - ```python3.X e2eMain.py```
 
-![GUI](doc/GUInew.png)
+![GUI](doc/GUI_new.png)
 
 If you are running MacOS and have problems using tkinter, make sure that tkinter is properly installed (```brew install python-tk@3.10``` when using python version 3.10) and try to use the homebrew version to generate the virtual environment (usually at ```/opt/homebrew/bin/python3,10```) using ```/opt/homebrew/bin/python3.10 -m venv e2eEval``` at the beginning.
 
