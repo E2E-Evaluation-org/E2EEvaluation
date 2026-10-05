@@ -47,7 +47,7 @@ def inititalizeUI():
     ], k='-MENUBAR-')]
 
     layoutGeneral = [sg.Frame('General Settings', [
-        [sg.Radio('Generate Cause-Effect Chains', "RadioGeneral", default=True, k='-Generate_CEC_Radio-', enable_events=True), sg.Checkbox('Store generated Cause-Effect Chains (pickle/YAML)', default=False, k='-Store_CECs_Box-', pad=((60,0),(0,0)))],
+        [sg.Radio('Generate Cause-Effect Chains', "RadioGeneral", default=True, k='-Generate_CEC_Radio-', enable_events=True), sg.Checkbox('Store generated Cause-Effect Chains (pickle/YAML/JSON)', default=False, k='-Store_CECs_Box-', pad=((60,0),(0,0)))],
         [sg.Radio('Load Cause-Effect Chains from File', "RadioGeneral", default=False, k='-Load_CEC_Radio-', enable_events=True), sg.Text('File:', pad=((35,0),(0,0))), sg.Input(s=30, k='-File_Input-', disabled=True), sg.FileBrowse(file_types=(("CEC File", "*.pickle"),), k="-Browse-", disabled=True)],
         [sg.Text('Threads:'), sg.Input(s=5, k='-Threads_Input-', default_text='1')],
     ], expand_x=True)]
@@ -106,7 +106,7 @@ def inititalizeUI():
             )
         ]], expand_x=True)]], expand_x=True)
         ]
-    ], expand_x=True, size=(None, 220))]
+    ], expand_x=True, size=(None, 200))]
 
     layoutPlot = [sg.Frame('Output Configuration', [
         [sg.Checkbox('Create normalized Plots (relative Latency Reduction)', default=True, k='-CBP1-')],
@@ -123,10 +123,10 @@ def inititalizeUI():
         [layoutChain],
         [layoutAnalysis],
         [layoutPlot],
-        [sg.Button('Run Evaluation'), sg.Button('Print CLI Commands')]
+        [sg.Button('Run Evaluation'), sg.Button('Print CLI Commands')],
     ]
 
-    font = ("Arial", 11)
+    font = ("Arial", 10)
     window = sg.Window('Evaluation Framework for End-to-End Analysis', layout, font=font, ttk_theme=ttk_style)
     return window
 

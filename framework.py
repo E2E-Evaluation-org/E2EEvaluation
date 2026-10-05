@@ -21,6 +21,7 @@ import random as random
 from multiprocessing import Pool
 from utilities.scheduler import compute_all_schedules
 from utilities.yaml_export import export_to_yaml
+from utilities.json_export import export_to_json
 import time as time
 
 
@@ -407,6 +408,7 @@ def generate_cecs(general_params,
             output_params['output_dir'] = helpers.make_output_directory()
         helpers.write_data(output_params['output_dir'] + "cause_effect_chains.pickle", cause_effect_chains)
         export_to_yaml(output_params['output_dir'], cause_effect_chains)
+        export_to_json(output_params['output_dir'], cause_effect_chains)
 
     return cause_effect_chains
 

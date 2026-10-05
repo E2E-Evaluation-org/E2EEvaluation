@@ -40,7 +40,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
                 # Check if they are in the range.
                 if samples[i] < 0.34 or samples[i] > 30.11:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             # Case: Some samples had to be pulled again.
             if outliers_detected:
                 continue
@@ -61,7 +61,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.32 or samples[i] > 40.69:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
@@ -78,7 +78,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.36 or samples[i] > 83.38:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
@@ -95,7 +95,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.21 or samples[i] > 309.87:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
@@ -112,7 +112,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.25 or samples[i] > 291.42:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
@@ -130,7 +130,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.29 or samples[i] > 92.98:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
@@ -148,7 +148,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.21 or samples[i] > 420.43:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
@@ -166,7 +166,7 @@ def sample_runnable_acet(period, amount=1, scalingFlag=False):
             for i in range(len(samples)):
                 if samples[i] < 0.22 or samples[i] > 21.95:
                     outliers_detected = True
-                    samples[i] = dist.rvs(size=1)
+                    samples[i] = dist.rvs()
             if outliers_detected:
                 continue
             if scalingFlag:
